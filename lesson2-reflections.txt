@@ -1,0 +1,47 @@
+
+some more common git commands:
+
+	git init
+	- initializes a git repository in a given folder
+
+	git status
+	- gives information on the status of the git repository
+
+	git add filename
+	- adds a file to the repository
+	note: when a file is changed (editted), it needs to be added again. #this is known as staging
+
+	git diff
+	- shows the difference(s) between the files in the staging area and the files in the working directory
+	git diff --staged
+	- shows the difference between the file/files in the staging area and those in the most recent commit
+	git reset --hard
+	- gets rid of all the changes in the staging area and working directory. be careful when using this, making sure you know what is 
+          in the staging area and working directory and making sure they are not needed as this is not reversible
+	git branch
+	- shows a list of all branches
+	git branch branchname
+	- creates a branch with the name, branchname
+	
+
+
+	git rm --cached filename
+	- removes a file in the staging area
+
+	git log --graph --oneline branchname1 branchname2
+	- shows the order of the branches and where they divergeq
+
+	*the concept of reachability
+	- git log starts with the current commit or any commit specified in a branch (or  any branch specified) and traces it back till it gets to a commit which has no parent. This is generally the initial commit.
+	- a commit is reachable from another commit if they are connected by a parent child connection
+	
+	git merge master branchname
+	- this merges the brannch branchname to the master branch. ensure that you're in the master branch (checkout the master branch) before running this command
+
+	git show commitid
+	- shows the difference between the commit with the id, commitid and its parent commit
+	- after merging, the commits are arranged using time from the most recent to the oldest. sometimes, the commit directly behind another commit may not be it's parent. you dont have to know the id of the parent commit
+
+	git branch -d branchname
+	- deletes the branch, branchname
+	- if branchname has been merged with master, the commits from branchname are also under master, so branchname is safe to delete

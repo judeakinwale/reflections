@@ -1,0 +1,12 @@
+version control is important.
+version control software being used is git.
+note that a commit is a snapshot of a repository
+common git commands:
+	git log
+	- shows a list of all the commits, with details about the commits including comments 
+	git diff "old commit's id" "new commit's id"
+	- compares two commits, highlighting the differences. this is very useful for finding and fixing mistakes and differences in the code that could cause bugs
+	git checkout "commit's id"
+	- this replaces the latest commit with another commit using it's id. it is very useful for figuring out what build introduced bugs by testing older builds using their commits
+
+configured the git bash to be more user friendly using colors and shortcuts. also adjusting how code and directories are presented in the git bash
