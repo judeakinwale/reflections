@@ -53,3 +53,15 @@ some more common git commands:
 	git branch -d branchname
 	- deletes the branch, branchname
 	- if branchname has been merged with master, the commits from branchname are also under master, so branchname is safe to delete
+
+	git checkout -b branchname
+	- this saves the files in the staging area to a new branch with a name, branchname
+
+	git merge branch1 branch2
+	- this merges two branches together.
+	- the other branch is merged into the working directory branch. to merge the master branch into anothe branch, for example, experimental, run:
+		git checkout experimental
+		git merge master experimental
+
+	*merge conflict resolution 
+	- when there is a conflict, the affected parts of the file are highlighted in the code, with indicators for the different versions of the same section highlighted. to resolve the conflict, the unwanted versions are deleted as well as the indicators (put there by git) leaving the correct section and making modifications where needed
