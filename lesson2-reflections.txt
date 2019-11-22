@@ -31,6 +31,8 @@ some more common git commands:
 	- this commits the files in the staging area. it also opens a set code editor to write in a commit message.
 
 	git commit -am "commitmessage"
+	or
+	git commit -m "commitmessage"
 	- this commits files with commitmessage being the commit message
 
 	git rm --cached filename
