@@ -1,7 +1,38 @@
 
 	*adding remote repositories
 	- this is creating a repository on github, to which you can push (ie upload) a local repository and all the commits made
+	
+	git remote
+	- this lists all the remote repositories
 
 	git remote add origin https://github.com/username/repositoryname.git
+	or
+	git remote add origin https://github.com/username/repositoryname
 	- this creates a remote repository where repositoryname is the name of the repository made on github.
 the repository name on github is usually the same as that of the local repository
+
+	git remote push origin master
+	- this pushes the local repository's master branch to the github repository, updating the remote repository. **master would be replaced by the name of the branch to be pushed
+
+	git remote pull origin master
+	- this pulls the remote repository and updates the local repository with it
+
+	git remote -v
+	- this lists all the remote repositories with more details like the fetch (pull) url and the push url. ** -v means verbose which means that it displays more information
+ 
+	#Fork
+	- clicking on the fork button on a github repository page (online) makes a copy of the repository in your account . this repository still links to the original repository
+
+	git clone https://github.com/username/repositoryname.git
+	- this clones the repository with the name repositoryname. **if the repository is on your account, it is added as a remote
+
+	*the branch, origin/master
+	- this is the local copy of the remote master bracvh
+
+	git fetch origin
+	- this updates the branch origin/master without merging origin/master and master
+
+	git merge master origin/master
+	- this merges master and origin/master
+
+**git pull origin master = git fetch origin + git merge master origin/master
