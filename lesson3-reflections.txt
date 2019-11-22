@@ -1,0 +1,7 @@
+
+	*adding remote repositories
+	- this is creating a repository on github, to which you can push (ie upload) a local repository and all the commits made
+
+	git remote add origin https://github.com/username/repositoryname.git
+	- this creates a remote repository where repositoryname is the name of the repository made on github.
+the repository name on github is usually the same as that of the local repository
