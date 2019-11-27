@@ -11,10 +11,10 @@
 	- this creates a remote repository where repositoryname is the name of the repository made on github.
 the repository name on github is usually the same as that of the local repository
 
-	git remote push origin master
+	git push origin master
 	- this pushes the local repository's master branch to the github repository, updating the remote repository. **master would be replaced by the name of the branch to be pushed
 
-	git remote pull origin master
+	git pull origin master
 	- this pulls the remote repository and updates the local repository with it
 
 	git remote -v
